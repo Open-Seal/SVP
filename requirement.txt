@@ -1,2 +1,4 @@
-mediapipe 
-opencv-python
+cv2
+mediapipe
+pyautogui
+math

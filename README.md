@@ -4,38 +4,36 @@
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
 [![Platform](https://img.shields.io/badge/platform-Python%203.8%2B-blue)]()
 
-
-
-A real-time **hand gesture visualization tool** for Linux Wayland using a webcam.  
-This app **does not trigger real mouse events** — it only shows detected gestures and a visual cursor.  
-Useful for **gesture tracking experiments**, **recognition training**, and **prototype gesture-based interfaces**.
+A **real-time hand gesture tracking app** for Linux Wayland using a webcam.  
+It shows a **virtual cursor** and **gesture labels** but does **not send real mouse input**.  
+Great for **research**, **training models**, and **prototyping gesture-based UIs**.
 
 ---
 
-## Features
+## ✨ Features
 
-- Tracks the **index fingertip** as a virtual cursor.  
-- Recognizes gestures:
+- Virtual cursor follows the **index fingertip**  
+- Gesture recognition:
   - **Left Click (visual)** → index finger near thumb  
   - **Right Click (visual)** → index finger near middle finger  
-  - **Double Click (visual)** → fingers close together  
-  - **Move Cursor** → free index finger movement  
-- Visual feedback:
-  - Colored circle showing cursor position  
-  - Text label with the detected gesture  
-- Runs in **real time** with PyQt5 + OpenCV  
-- Designed for **Wayland sessions on Linux**  
+  - **Double Click (visual)** → multiple fingers close  
+  - **Move Cursor** → free movement of index finger  
+- On-screen feedback:
+  - Colored circle = cursor position  
+  - Text = detected gesture + FPS counter  
+- Works in **real time** with PyQt5 + OpenCV  
+- Optimized for **Wayland desktops on Linux**  
 
 ---
 
-## Requirements
+## 📦 Requirements
 
 - Python **3.8+**  
 - [OpenCV](https://pypi.org/project/opencv-python/)  
 - [Mediapipe](https://pypi.org/project/mediapipe/)  
 - [PyQt5](https://pypi.org/project/PyQt5/)  
-- Linux with **Wayland**  
-- A working **webcam**  
+- Linux with **Wayland** session  
+- Any **USB or built-in webcam**  
 
 Install dependencies:
 
@@ -45,20 +43,21 @@ pip install opencv-python mediapipe PyQt5
 
 ---
 
-## Usage
+## 🚀 Usage
 
 * **Move Cursor** → move index finger freely
 * **Left Click (visual)** → bring index finger close to thumb
 * **Right Click (visual)** → bring index finger close to middle finger
-* **Double Click (visual)** → fingers close together
+* **Double Click (visual)** → touch index and middle finger
 
-The app shows the detected gesture and a visual cursor in the camera window.
+The app opens a window with the **camera feed**, showing gestures and the **virtual cursor**.
 
 ---
 
-## Notes
+## 📝 Notes
 
-* No real mouse control is performed — this is a **visualization only**.
-* Best results with **good lighting** and a clear view of the hand.
-* Intended for **learning, demos, and testing gesture recognition**.
+* Only **visual feedback** is provided — no real mouse actions.
+* Works best with **bright lighting** and **clear hand visibility**.
+* Made for **learning, experimentation, and demos**.
+
 

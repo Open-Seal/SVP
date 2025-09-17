@@ -1,4 +1,4 @@
-opencv-python
-mediapipe
-PyQt5
-pyautogui
+opencv-python>=4.8
+mediapipe>=0.10
+PyQt5>=5.15
+pyautogui>=0.9

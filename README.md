@@ -10,7 +10,7 @@ Great for **research**, **training models**, and **prototyping gesture-based UIs
 
 ---
 
-## ✨ Features
+## Features
 
 - Virtual cursor follows the **index fingertip**  
 - Gesture recognition:
@@ -26,7 +26,7 @@ Great for **research**, **training models**, and **prototyping gesture-based UIs
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - Python **3.8+**  
 - [OpenCV](https://pypi.org/project/opencv-python/)  
@@ -43,7 +43,7 @@ pip install opencv-python mediapipe PyQt5
 
 ---
 
-## 🚀 Usage
+## Usage
 
 * **Move Cursor** → move index finger freely
 * **Left Click (visual)** → bring index finger close to thumb
@@ -54,7 +54,7 @@ The app opens a window with the **camera feed**, showing gestures and the **virt
 
 ---
 
-## 📝 Notes
+## Notes
 
 * Only **visual feedback** is provided — no real mouse actions.
 * Works best with **bright lighting** and **clear hand visibility**.
